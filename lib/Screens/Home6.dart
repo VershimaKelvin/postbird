@@ -337,66 +337,67 @@ class _HomePage2State extends State<HomePage2> {
                         ),
                       ),
                       Positioned(
-                        left: screenWidth*0.04,
                         top: screenHeight*0.5,
-                        child: Container(
-                          width: 335,
-                          height: 130,
-                          decoration: BoxDecoration(
-                            color: Color(0xFFFBD351),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.only(
-                              right: 0,
-                              left: 20,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            width: screenWidth*0.96,
+                            decoration: BoxDecoration(
+                              color: Color(0xFFFBD351),
+                              borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Row(
-                              children: [
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    SizedBox(
-                                      height: 50,
-                                    ),
-                                    Text(
-                                      'PostBird Business',
-                                      textAlign: TextAlign.left,
-                                      style: GoogleFonts.manrope(
-                                          color: Color.fromRGBO(
-                                              0, 0, 0, 0.6000000238418579),
-                                          fontSize: 14,
-                                          letterSpacing: 0,
-                                          fontWeight: FontWeight.w700,
-                                          height: 1),
-                                    ),
-                                    SizedBox(
-                                      height: 5,
-                                    ),
-                                    Text(
-                                      'We can help your business',
-                                      textAlign: TextAlign.left,
-                                      style: GoogleFonts.manrope(
-                                          color: Color.fromRGBO(
-                                              0, 0, 0, 0.3499999940395355),
-                                          fontSize: 12,
-                                          letterSpacing: 0,
-                                          fontWeight: FontWeight.w400,
-                                          height: 1),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(
-                                  width: 25,
-                                ),
-                                Image(
-                                  height: 103,
-                                  width: 132,
-                                  image: AssetImage(
-                                    'assets/box.png',
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                right: 0,
+                                left: 20,
+                              ),
+                              child: Row(
+                                children: [
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      SizedBox(
+                                        height: screenHeight*0.04,
+                                      ),
+                                      Text(
+                                        'PostBird Business',
+                                        textAlign: TextAlign.left,
+                                        style: GoogleFonts.manrope(
+                                            color: Color.fromRGBO(
+                                                0, 0, 0, 0.6000000238418579),
+                                            fontSize: 14,
+                                            letterSpacing: 0,
+                                            fontWeight: FontWeight.w700,
+                                            height: 1),
+                                      ),
+                                      SizedBox(
+                                        height: 5,
+                                      ),
+                                      Text(
+                                        'We can help your business',
+                                        textAlign: TextAlign.left,
+                                        style: GoogleFonts.manrope(
+                                            color: Color.fromRGBO(
+                                                0, 0, 0, 0.3499999940395355),
+                                            fontSize: 12,
+                                            letterSpacing: 0,
+                                            fontWeight: FontWeight.w400,
+                                            height: 1),
+                                      ),
+                                    ],
                                   ),
-                                ),
-                              ],
+                                  SizedBox(
+                                    width: screenWidth*0.1,
+                                  ),
+                                  Image(
+                                    height: screenHeight*0.15,
+                                    width: screenWidth*0.3,
+                                    image: AssetImage(
+                                      'assets/box.png',
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -471,7 +472,7 @@ class _HomePage2State extends State<HomePage2> {
                           style: TextStyle(
                               color: Colors.black,
                               fontFamily: 'Manrope',
-                              fontSize: 22,
+                              fontSize: 17,
                               letterSpacing: 0,
                               fontWeight: FontWeight.bold,
                               height: 1),
@@ -479,7 +480,7 @@ class _HomePage2State extends State<HomePage2> {
                       ),
                       Positioned(
                         top: screenHeight*0.03,
-                        left: screenWidth*0.45,
+                        left: screenWidth*0.43,
 
                         child: Container(
                           decoration: BoxDecoration(
