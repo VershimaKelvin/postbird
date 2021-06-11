@@ -11,6 +11,9 @@ class Recipient extends StatefulWidget {
 class _RecipientState extends State<Recipient> {
   @override
   Widget build(BuildContext context) {
+
+    var screenWidth = MediaQuery.of(context).size.width;
+    var screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Colors.orangeAccent,
       body: SafeArea(
@@ -35,8 +38,8 @@ class _RecipientState extends State<Recipient> {
                 padding: EdgeInsets.only(left: 20, right: 20),
                 width: 410,
                 height: 900,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: ListView(
+                 // crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
                       height: 20,
@@ -565,8 +568,8 @@ class _RecipientState extends State<Recipient> {
                       height: 10,
                     ),
                     Container(
-                      height: 129,
-                      width: 335,
+                      height: screenHeight*0.2,
+                      width: screenWidth,
                       child: TextFormField(
                         keyboardType: TextInputType.name,
                         decoration: InputDecoration(
@@ -605,10 +608,9 @@ class _RecipientState extends State<Recipient> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(top:20, bottom:10.0),
+                      padding: const EdgeInsets.only(top:10, bottom:10.0),
                       child: Container(
-                        width: 343,
-                        height: 48,
+                        width: screenWidth,
                         decoration: BoxDecoration(
                           borderRadius : BorderRadius.only(
                             topLeft: Radius.circular(8),

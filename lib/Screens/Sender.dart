@@ -628,7 +628,7 @@ class _SenderState extends State<Sender> {
                           child: Column(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(top: 35),
+                                padding: const EdgeInsets.only(top: 30),
                                 child: Image(
                                   image: AssetImage(
                                       'assets/cargo.png'
