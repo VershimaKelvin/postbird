@@ -248,7 +248,7 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(
                             color: Colors.black,
                             fontFamily: 'Manrope',
-                            fontSize: 22,
+                            fontSize: 18,
                             letterSpacing: 0,
                             fontWeight: FontWeight.bold,
                             height: 1),
@@ -256,7 +256,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Positioned(
                       top: screenHeight*0.03,
-                      left: screenWidth*0.45,
+                      left: screenWidth*0.43,
 
                       child: Container(
                         decoration: BoxDecoration(
